@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>lab1</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="man icon" type="image/x-icon" href="/images/logo.png" />
+</head>
+
+<body>
+<div>
+
+    <header>
+        <div class="logo flex-container">
+            <img src="/images/logo.png" alt="logo" />
+        </div>
+    </header>
+
+    <main>
+        <h1 class="main_h1"> JS >> вариант 10</h1>
+
+        <span class="currency-row_span">Задание 1 --> </span>
+        <div>
+            <div id="date-time" class="currency-info" > Текущее время</div>
+        </div>
+
+        <span class="currency-row_span">Задание 2 --> </span>
+        <div>
+            <p>Календарь ФКТиПМ</p>
+            <div id="calendar"> Календарь</div>
+        </div>
+
+        <span class="currency-row_span">Задание 3 --> </span>
+        <div>
+            <ul class="currency-box">
+                <li class="currency-row" id="element"> Элемент 1</li>
+                <li class="currency-row"> Элемент 2</li>
+                <li class="currency-row"> Элемент 3</li>
+                <li class="currency-row"> Элемент 4</li>
+                <li class="currency-row"> Элемент 5</li>
+                <li class="currency-row"> Элемент 6</li>
+
+            </ul>
+            <script>
+                let temp = document.getElementById('element').parentNode;
+                console.log("Количество ДОМ элементов = " + temp.childElementCount);
+            </script>
+        </div>
+
+        <span class="currency-row_span">Задание 4 --> </span>
+        <div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <button onclick="setInterval(changeRandomBlock, 100)" class="button">Запустить рандом</button>
+        </div>
+
+        <span class="currency-row_span">Задание 5 --> </span>
+        <div id="insert_here">
+        </div>
+
+        <span class="currency-row_span">Задание 6 --> </span>
+        <div>
+            <table>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <span class="currency-row_span">Задание 7 --> </span>
+        <div class="menu">
+            <button class="menu-button">Меню</button>
+            <ul class="menu-list">
+                <li>Пирожное</li>
+                <li>Шоколад</li>
+                <li>Мороженое</li>
+                <li>Конфеты</li>
+            </ul>
+            <p class="no-candy hidden">Сладости закончились</p>
+        </div>
+
+        <span class="currency-row_span">Задание 8 --> </span>
+        <div class="container">
+            <img src="../images/character.png" class="image">
+            <div class="text">Текст, который будет проявляться</div>
+        </div>
+
+        <span class="currency-row_span">Задание 9 --> </span>
+        <div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                <br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+                <br>
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+
+</div>
+
+<script src="../js/randomChange.js"></script>
+<script type="module" src="../js/curtime.js"></script>
+<script type="module" src="../js/calendar.js"></script>
+<script type="module" src="../js/createEl.js"></script>
+<script type="module" src="../js/randomNumInTable.js"></script>
+<script type="module" src="../js/menu.js"></script>
+
+</body>
+</html>

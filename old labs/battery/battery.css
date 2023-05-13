@@ -1,0 +1,195 @@
+.pimpa{
+    border: 5px solid #666;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 52%;
+    left: 0;
+    margin:auto;
+    height:10px;
+    width:50px;
+    background-color: #666;
+
+}
+.battery-level-control-eq {
+    margin-left:200px;
+    margin-top:60px;
+}
+.levels-eq{
+
+    border:5px solid #666;
+    border-radius:2px;
+    background-color:#66CC33;
+    height:50%;
+    width:25%;
+    float:left;
+    animation:mp-eq1-bg 10.5s;
+    -webkit-animation:mp-eq1-bg 10.5s;
+    -moz-animation:mp-eq1-bg 10.5s;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin:auto;
+}
+.eq{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border: none;
+
+    background-color:#fff;
+    animation:mp-eq1 10.5s ;
+
+}
+
+/*--------------------------------------------------------*/
+
+@keyframes mp-eq1-bg{
+    0%{
+        transition:all 16s ease-in-out;
+        background-color:lightgrey;
+    }
+    20%{
+        transition:all 16s ease-in-out;
+        background-color:#CC3333;
+    }
+    40%{
+        transition:all 16s ease-in-out;
+        background-color:#CC3366;
+    }
+    60%{
+        transition:all 16s ease-in-out;
+        background-color:#FFCC66;
+    }
+    80%{
+        transition:all 16s ease-in-out;
+        background-color:#FFCC00;
+    }
+    100%{
+        transition:all 16s ease-in-out;
+        background-color:#66CC33;
+    }
+}
+
+@keyframes mp-eq1{
+    0% {
+        transition: all 16s ease-in-out;
+        height:0;
+    }
+    20%{
+        transition:all 16s ease-in-out;
+        height:400px;
+    }
+    40%{
+        transition:all 16s ease-in-out;
+        height:300px;
+    }
+    60%{
+        transition:all 16s ease-in-out;
+        height:200px;
+    }
+    80%{
+        transition:all 16s ease-in-out;
+        height:100px
+    }
+    100%{
+        transition:all 16s ease-in-out;
+        height:0;
+    }
+}
+
+/*----------------------Status bar--------------------------*/
+
+.status {
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    float:left;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+.status-info{
+    width:auto;
+    animation: info 18s infinite;
+    animation-fill-mode: backwards;
+    animation-timing-function: steps(10);
+    animation-iteration-count: 1;
+}
+.status-info div {
+    float:right;
+    text-align:center;
+    width:100px;
+    height:100px;
+    font-size:30px;
+    font-weight:300;
+    line-height:100px;
+    display:inline-block;
+}
+
+@-webkit-keyframes info {
+    0% {
+        margin-right:0
+    }
+    100% {
+        margin-right:-1000px;
+    }
+}
+
+/*------------------------Button--------------------------*/
+
+.charge-btn{
+    animation:btn 10.5s ;
+    -webkit-animation:btn 10.5s;
+    -moz-animation:btn 10.5s;
+    border:2px solid rgba(255,255,255,0.4);
+    padding:10px;
+    font-size:17px;
+    color:#f5f5f5;
+    cursor:pointer;
+    border-radius:2px;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: -50px;
+}
+.charge-btn::before{
+    content: "click to charge battery";
+}
+
+/*-----------------Button color animation-----------------------*/
+@keyframes btn{
+    0% {
+        transition: all 16s ease-in-out;
+        background-color: lightgrey;
+    }
+    20%{
+        transition:all 16s ease-in-out;
+        background-color:#CC3333;
+    }
+    40%{
+        transition:all 16s ease-in-out;
+        background-color:#CC3366;
+    }
+    60%{
+        transition:all 16s ease-in-out;
+        background-color:#FFCC66;
+    }
+    80%{
+        transition:all 16s ease-in-out;
+        background-color:#FFCC00;
+    }
+    100%{
+        transition:all 16s ease-in-out;
+        background-color:#66CC33;
+    }
+}
